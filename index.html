@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATTVIK | Fine Dining Experience</title>
+    <meta name="description"
+        content="Award-winning vegetarian fine dining in Ahmedabad. Experience the essence of Indian culinary heritage.">
+    <link id="themeStylesheet" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+   <script src="theme.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="loader-logo">SATTVIK.</div>
+    </div>
+
+    <nav id="navbar">
+        <div class="logo">Sattvik.</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="memories.html">Memories</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+
+        </ul>
+        <div class="nav-actions">
+            <a href="reservetable.html" class="btn">Reserve Table</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <span class="hero-subtitle reveal-up">Established 1995</span>
+        <h1 class="hero-title reveal-up">The Art of <br> <span class="gold">Vegetarian</span> Fine Dining</h1>
+        <div class="reveal-up">
+            <a href="#menu" class="btn btn-fill">Explore Menu</a>
+        </div>
+        <div class="scroll-down">Scroll</div>
+    </header>
+
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-text reveal-left">
+                <span class="sec-tag">Our Philosophy</span>
+                <h2 class="sec-title" style="margin-bottom: 30px;">Elevating Roots to<br>Global Standards</h2>
+                <p>At Sattvik, we believe that vegetarian cuisine is not an alternative, but a primary choice for the
+                    refined palate. Our kitchen explores the depths of Indian culinary history, reviving lost recipes
+                    from royal kitchens and presenting them with contemporary finesse.</p>
+                <p>We source our spices from select estates in Kerala and our produce from organic farms in Gujarat,
+                    ensuring every dish tells a story of authenticity and purity.</p>
+                <div style="margin-top: 50px;">
+                    <span
+                        style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--gold-primary); font-style: italic;">Chef
+                        Aryan Sharma</span>
+                    <div
+                        style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; margin-top: 5px;">
+                        Executive Chef</div>
+                </div>
+            </div>
+            <div class="about-img-wrap reveal-right">
+                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2070&auto=format&fit=crop"
+                    class="about-img" alt="Chef Plating">
+                <div class="about-badge">
+                    <span>28</span>
+                    <small>Years of<br>Excellence</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="craft" class="craft-section">
+        <div class="section-header center reveal-up">
+            <span class="sec-tag">The Process</span>
+            <h2 class="sec-title">Culinary Mastery</h2>
+        </div>
+        <div class="craft-grid reveal-up">
+            <div class="craft-card">
+                <div class="craft-number">01</div>
+                <h3 class="craft-title">Ethical Sourcing</h3>
+                <p class="craft-desc">We partner directly with artisanal growers. From saffron harvested at dawn to
+                    farm-fresh dairy, every ingredient is traceable and pure.</p>
+            </div>
+            <div class="craft-card">
+                <div class="craft-number">02</div>
+                <h3 class="craft-title">Ancient Technique</h3>
+                <p class="craft-desc">We utilize traditional methods like clay oven smoking (Dhungar) and slow-cooking
+                    (Dum) to extract deep, complex flavors.</p>
+            </div>
+            <div class="craft-card">
+                <div class="craft-number">03</div>
+                <h3 class="craft-title">Modern Artistry</h3>
+                <p class="craft-desc">Our plating is inspired by modern art. We believe we eat with our eyes first,
+                    making every plate a visual masterpiece.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="section-header center reveal-up">
+            <span class="sec-tag">The Collection</span>
+            <h2 class="sec-title">Seasonal Favorites</h2>
+        </div>
+
+        <div class="menu-grid reveal-up">
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Smoked Paneer</span>
+                    <span class="menu-price">₹340</span>
+                </div>
+                <p class="menu-desc">Cottage cheese marinated in yogurt and yellow chili, smoked with clove, served with
+                    mint chutney foam.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Dal Sattvik</span>
+                    <span class="menu-price">₹290</span>
+                </div>
+                <p class="menu-desc">Black lentils slow-cooked for 24 hours on a charcoal flame, finished with churned
+                    white butter.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Truffle Kulcha</span>
+                    <span class="menu-price">₹180</span>
+                </div>
+                <p class="menu-desc">Traditional tandoor-baked bread stuffed with wild mushrooms and drizzled with
+                    truffle oil.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Saffron Risotto</span>
+                    <span class="menu-price">₹450</span>
+                </div>
+                <p class="menu-desc">Arborio rice cooked with Kashmiri saffron and parmesan crisp, fusing Italian
+                    technique with Indian soul.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Avocado Chaat</span>
+                    <span class="menu-price">₹320</span>
+                </div>
+                <p class="menu-desc">A modern take on street food. Avocado tartare, tamarind glaze, and sweet yogurt
+                    spheres.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Rose Petal Halwa</span>
+                    <span class="menu-price">₹220</span>
+                </div>
+                <p class="menu-desc">Reduced milk pudding infused with dried rose petals and garnished with silver leaf.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 80px;">
+            <a href="#" class="btn">Download Full Menu (PDF)</a>
+        </div>
+    </section>
+
+    <div id="private" class="private-dining">
+        <div class="pd-image reveal-right"></div>
+        <div class="pd-content reveal-left">
+            <span class="sec-tag">Exclusive Gatherings</span>
+            <h2 class="sec-title" style="color: #000; margin-bottom: 30px;">Private Dining &<br>Events</h2>
+            <h2 class="sec-title" style="margin-bottom: 30px;">Private Dining &<br>Events</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 40px;">
+                Host your next celebration in our dedicated private lounge. Whether it is an intimate anniversary dinner
+                or a corporate gala, our team curates bespoke menus and decor to match the occasion.
+            </p>
+            <ul style="list-style: none; color: var(--text-muted); margin-bottom: 40px; font-weight: 300;">
+                <li style="margin-bottom: 15px;"><i class="fas fa-check gold" style="margin-right: 15px;"></i> Seating
+                    for up to 50 guests</li>
+                <li style="margin-bottom: 15px;"><i class="fas fa-check gold" style="margin-right: 15px;"></i>
+                    Customized Tasting Menus</li>
+                <li style="margin-bottom: 15px;"><i class="fas fa-check gold" style="margin-right: 15px;"></i> Private
+                    Sommelier Service</li>
+            </ul>
+            <div>
+                <a href="#contact" class="btn">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="ambience" class="ambience">
+        <div class="ambience-text reveal-left">
+            <span class="sec-tag">The Atmosphere</span>
+            <h2 class="sec-title" style="margin-bottom: 30px;">Intimacy &<br>Grandeur</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; font-weight: 300; margin-bottom: 40px;">
+                Our interiors blend the rustic charm of traditional Haveli architecture with the sleek lines of modern
+                minimalism. The lighting is curated to create a warm, golden embrace, perfect for conversations that
+                matter.
+            </p>
+            <a href="#gallery"
+                style="color: var(--gold-primary); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; border-bottom: 1px solid var(--gold-primary); display: inline-block; width: fit-content;">View
+                Gallery</a>
+        </div>
+        <div class="ambience-img reveal-right"></div>
+    </div>
+
+    <section class="reviews-section">
+        <div class="section-header center reveal-up">
+            <span class="sec-tag">Acclaim</span>
+            <h2 class="sec-title">In The Press</h2>
+        </div>
+        <div class="reviews-grid reveal-up">
+            <div class="review-card">
+                <div class="review-quote">"Sattvik transforms vegetarian ingredients into a gastronomic theatre. Utterly
+                    memorable."</div>
+                <div class="review-source">Vogue India</div>
+            </div>
+            <div class="review-card">
+                <div class="review-quote">"The Dal Sattvik is arguably the finest lentil preparation in the country. A
+                    must-visit."</div>
+                <div class="review-source">Condé Nast Traveller</div>
+            </div>
+            <div class="review-card">
+                <div class="review-quote">"An architectural marvel paired with culinary excellence. It feels like a
+                    royal banquet."</div>
+                <div class="review-source">Times Food Guide</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="section-header center reveal-up">
+            <span class="sec-tag">Reservations</span>
+            <h2 class="sec-title">Book Your Experience</h2>
+        </div>
+
+        <div class="form-container reveal-up">
+            <form>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="tel" placeholder="+91 98765 43210">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Date</label>
+                        <input type="date" style="color-scheme: dark;">
+                    </div>
+                    <div class="input-group">
+                        <label>Guests</label>
+                        <select>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5+ Guests</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 60px;">
+                    <button type="button" class="btn btn-fill" style="width: 100%; max-width: 300px;">Confirm
+                        Booking</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="newsletter reveal-up">
+        <div class="news-content">
+            <h3>The Inner Circle</h3>
+            <p>Join our exclusive guest list for tasting event invitations.</p>
+        </div>
+        <form class="news-form">
+            <input type="email" placeholder="Email Address">
+            <button type="button">Subscribe</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Sattvik.</h2>
+                <p>Reimagining Indian vegetarian cuisine with elegance, tradition, and innovation.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#ambience">Gallery</a></li>
+                    <li><a href="#private">Private Dining</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Visit Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">123 Spice Garden
+                    Road,<br>Ahmedabad, Gujarat</p>
+                <p style="color: var(--gold-primary);">Open Daily: 11 AM - 11 PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">reservations@sattvik.com
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">+91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2025 Sattvik Restaurant. All Rights Reserved.</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Preloader Animation
+        window.addEventListener('load', () => {
+            const tl = gsap.timeline();
+            tl.to(".loader-logo", { opacity: 1, y: 0, duration: 1, ease: "power3.out" })
+                .to(".loader", { y: "-100%", duration: 1, delay: 0.5, ease: "power3.inOut" });
+        });
+
+        // 2. Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        // 3. GSAP Scroll Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // General Fade Up
+        gsap.utils.toArray('.reveal-up').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: { trigger: elem, start: "top 85%" },
+                y: 50, opacity: 0, duration: 1.2, ease: "power3.out"
+            });
+        });
+
+        // Reveal Left
+        gsap.utils.toArray('.reveal-left').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: { trigger: elem, start: "top 80%" },
+                x: -50, opacity: 0, duration: 1.2, ease: "power3.out"
+            });
+        });
+
+        // Reveal Right
+        gsap.utils.toArray('.reveal-right').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: { trigger: elem, start: "top 80%" },
+                x: 50, opacity: 0, duration: 1.2, ease: "power3.out"
+            });
+        });
+    </script>
+</body>
+
+</html>

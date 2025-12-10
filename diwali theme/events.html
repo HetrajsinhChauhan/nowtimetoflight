@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Private Dining | SATTVIK Diwali Edition</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@200;300;400;500;600&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="loader-logo" id="l-brand">SATTVIK.</div>
+        <div class="loader-greeting" id="l-greet">Happy Diwali</div>
+    </div>
+
+    <div class="hanging-lamp lamp-left">
+        <div class="lamp-string"></div>
+        <div class="lamp-body">
+            <div class="lamp-flame"></div>
+            <div class="lamp-glow-under"></div>
+        </div>
+    </div>
+    <div class="hanging-lamp lamp-right">
+        <div class="lamp-string"></div>
+        <div class="lamp-body">
+            <div class="lamp-flame"></div>
+            <div class="lamp-glow-under"></div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="logo">Sattvik.</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="memories.html">Memories</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+
+        </ul>
+        <div class="nav-actions">
+            <a href="reservetable.html" class="btn">Reserve Table</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <canvas id="fireworks-canvas"></canvas>
+
+        <div class="diwali-greeting reveal-up">✨ Shubh Deepavali ✨</div>
+        <h1 class="page-title reveal-up">Celebrations</h1>
+        <span class="page-subtitle reveal-up">Private Dining & Corporate Events</span>
+    </header>
+
+    <section class="intro-section reveal-up">
+        <span class="section-tag">The Art of Hosting</span>
+        <h2 class="section-heading">Curated For Perfection</h2>
+        <p class="section-desc">
+            From intimate anniversary dinners to grand corporate galas, Sattvik offers a setting of unparalleled
+            elegance. Our dedicated events team works intimately with you to design bespoke menus, decor, and
+            experiences that leave a lasting impression.
+        </p>
+    </section>
+
+    <section class="spaces-section">
+        <div class="spaces-grid">
+
+            <div class="space-card reveal-up">
+                <div style="overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1974&auto=format&fit=crop"
+                        class="space-img" alt="PDR">
+                </div>
+                <div class="space-content">
+                    <h3 class="space-title">The Maharaja Lounge</h3>
+                    <span class="space-capacity">Capacity: 10 - 20 Guests</span>
+                    <p class="space-desc">A secluded enclave designed for privacy and exclusivity. Perfect for board
+                        meetings or family gatherings.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Private Butler Service</li>
+                        <li><i class="fas fa-check"></i> Custom Tasting Menu</li>
+                        <li><i class="fas fa-check"></i> AV Capabilities</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="space-card reveal-up">
+                <div style="overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop"
+                        class="space-img" alt="Main Hall">
+                </div>
+                <div class="space-content">
+                    <h3 class="space-title">Restaurant Buyout</h3>
+                    <span class="space-capacity">Capacity: Up to 120 Guests</span>
+                    <p class="space-desc">Reserve the entire restaurant for a grand reception. Experience the full
+                        ambiance of Sattvik exclusively for your party.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Full Bar Access</li>
+                        <li><i class="fas fa-check"></i> Live Music / DJ Setup</li>
+                        <li><i class="fas fa-check"></i> Flexible Seating Plans</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="space-card reveal-up">
+                <div style="overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2070&auto=format&fit=crop"
+                        class="space-img" alt="Catering">
+                </div>
+                <div class="space-content">
+                    <h3 class="space-title">Luxury Catering</h3>
+                    <span class="space-capacity">Off-Site Service</span>
+                    <p class="space-desc">Bring the essence of Sattvik to your venue. We provide full-service catering
+                        with chefs and service staff.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Live Food Stations</li>
+                        <li><i class="fas fa-check"></i> Silverware & Crockery</li>
+                        <li><i class="fas fa-check"></i> Custom Theme Decor</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="amenities reveal-up">
+        <div class="amenities-grid">
+            <div class="amenity">
+                <i class="fas fa-wine-glass-alt amenity-icon"></i>
+                <h4 class="amenity-title">Curated Beverages</h4>
+                <p class="amenity-desc">Custom mocktail pairings and premium selection.</p>
+            </div>
+            <div class="amenity">
+                <i class="fas fa-music amenity-icon"></i>
+                <h4 class="amenity-title">Acoustics</h4>
+                <p class="amenity-desc">State-of-the-art sound system for speeches or music.</p>
+            </div>
+            <div class="amenity">
+                <i class="fas fa-leaf amenity-icon"></i>
+                <h4 class="amenity-title">Bespoke Decor</h4>
+                <p class="amenity-desc">Floral arrangements to match your theme.</p>
+            </div>
+            <div class="amenity">
+                <i class="fas fa-parking amenity-icon"></i>
+                <h4 class="amenity-title">Valet Service</h4>
+                <p class="amenity-desc">Complimentary valet parking for all event guests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="inquiry-section">
+        <div class="section-tag" style="text-align: center;">Start Planning</div>
+        <h2 class="section-heading" style="text-align: center;">Request A Proposal</h2>
+
+        <div class="form-container reveal-up">
+            <form>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Contact Name</label>
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Company (Optional)</label>
+                        <input type="text" placeholder="Company Name">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="email@address.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+91 ..." required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Event Type</label>
+                        <select>
+                            <option>Corporate Dinner</option>
+                            <option>Wedding Reception</option>
+                            <option>Birthday Celebration</option>
+                            <option>Full Buyout</option>
+                            <option>Catering</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Estimated Guests</label>
+                        <input type="number" placeholder="e.g. 50">
+                    </div>
+                </div>
+
+                <div class="input-group" style="margin-bottom: 30px;">
+                    <label>Preferred Date & Additional Details</label>
+                    <textarea rows="4" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="btn btn-fill">Submit Inquiry</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Sattvik.</h2>
+                <p>Reimagining Indian vegetarian cuisine with elegance, tradition, and innovation.</p>
+                <p class="greeting-text">May your Diwali be bright and prosperous.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#ambience">Gallery</a></li>
+                    <li><a href="#private">Private Dining</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Visit Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">123 Spice Garden
+                    Road,<br>Ahmedabad, Gujarat</p>
+                <p style="color: var(--gold-primary);">Open Daily: 11 AM - 11 PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">reservations@sattvik.com
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">+91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2025 Sattvik Restaurant. All Rights Reserved.</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // --- 1. UPDATED PRELOADER ---
+        window.addEventListener('load', () => {
+            const tl = gsap.timeline();
+            tl.to("#l-brand", { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" })
+                .to("#l-brand", { opacity: 0, y: -20, duration: 0.5, delay: 0.5 })
+                .set("#l-greet", { display: "block" })
+                .to("#l-greet", { opacity: 1, y: 0, duration: 1, ease: "power3.out" })
+                .to(".loader", { y: "-100%", duration: 1, delay: 0.8, ease: "power3.inOut" });
+        });
+
+        gsap.utils.toArray('.reveal-up').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: { trigger: elem, start: "top 85%" },
+                y: 50, opacity: 0, duration: 1.2, ease: "power3.out"
+            });
+        });
+
+        // --- 2. FIREWORKS ENGINE ---
+        const canvas = document.getElementById('fireworks-canvas');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+        let particles = [];
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        class Particle {
+            constructor(x, y, color) {
+                this.x = x;
+                this.y = y;
+                this.color = color;
+                const angle = Math.random() * Math.PI * 2;
+                const speed = Math.random() * 3 + 1;
+                this.vx = Math.cos(angle) * speed;
+                this.vy = Math.sin(angle) * speed;
+                this.life = 1;
+                this.decay = Math.random() * 0.02 + 0.015;
+            }
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                this.life -= this.decay;
+                this.vy += 0.05;
+            }
+            draw() {
+                ctx.globalAlpha = this.life;
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, 2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function createFirework() {
+            const x = Math.random() * width;
+            const y = Math.random() * (height * 0.6);
+            const colors = ['#FF9933', '#FFCC00', '#FFFFFF', '#FF5722'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+
+            for (let i = 0; i < 40; i++) {
+                particles.push(new Particle(x, y, color));
+            }
+        }
+
+        function animateFireworks() {
+            ctx.clearRect(0, 0, width, height);
+            if (Math.random() < 0.02) createFirework();
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.update();
+                p.draw();
+                if (p.life <= 0) particles.splice(i, 1);
+            }
+            requestAnimationFrame(animateFireworks);
+        }
+        animateFireworks();
+    </script>
+</body>
+
+</html>

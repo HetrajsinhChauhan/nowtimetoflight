@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATTVIK | Janmashtami Grand Feast</title>
+    <meta name="description" content="Royal Vegetarian Fine Dining celebrating the birth of Lord Krishna.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Manrope:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="janindex.css">
+</head>
+
+<body>
+
+    <canvas id="fireworks-canvas"></canvas>
+
+    <div class="loader">
+        <div class="loader-logo">SATTVIK.</div>
+    </div>
+
+    <nav id="navbar">
+        <div class="logo">Sattvik.</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">The Bhog</a></li>
+            <li><a href="events.html">Leela</a></li>
+            <li><a href="memories.html">Darshan</a></li>
+            <li><a href="aboutus.html">Our Story</a></li>
+
+        </ul>
+        <div class="nav-actions">
+            <a href="reservetable.html" class="btn">Book Seva</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="handi-container">
+            <div class="rope"></div>
+            <i class="fas fa-jar handi-icon"></i>
+        </div>
+
+        <div class="feather-decor" style="top: 20%; left: 10%; transform: rotate(45deg);">
+            <i class="fas fa-feather-alt" style="font-size: 3rem; color: var(--gold-primary);"></i>
+        </div>
+        <div class="feather-decor" style="bottom: 20%; right: 10%; transform: rotate(-45deg); animation-delay: 1s;">
+            <i class="fas fa-feather-alt" style="font-size: 4rem; color: var(--accent-blue);"></i>
+        </div>
+
+        <span class="hero-subtitle reveal-up">Jai Shri Krishna</span>
+        <h1 class="hero-title reveal-up">The Royal <br> <span class="gold">Janmashtami</span> Feast</h1>
+        <div class="reveal-up">
+            <a href="#menu" class="btn btn-fill">View Bhog Menu</a>
+        </div>
+        <div class="scroll-down">Experience Divinity</div>
+    </header>
+
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-text reveal-left">
+                <span class="sec-tag">The Tradition</span>
+                <h2 class="sec-title" style="margin-bottom: 30px;">Pure Sattvik<br>For The Soul</h2>
+                <p>To celebrate the birth of Lord Krishna, our culinary masters have curated a menu that adheres
+                    strictly to Vaishnava traditions. No onions, no garlic—just the purest ingredients sourced from
+                    organic farms.</p>
+                <p>We use slow-churned butter (Makhan), Kashmiri Saffron, and earthen pots for cooking to ensure every
+                    dish tells a story of devotion and authenticity.</p>
+                <div style="margin-top: 50px;">
+                    <span
+                        style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--gold-primary); font-style: italic;">Chef
+                        Aryan Sharma</span>
+                    <div
+                        style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; margin-top: 5px;">
+                        Executive Chef</div>
+                </div>
+            </div>
+            <div class="about-img-wrap reveal-right">
+                <img src="https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?q=80&w=2072&auto=format&fit=crop"
+                    class="about-img" alt="Indian Spices">
+                <div class="about-badge">
+                    <span>28</span>
+                    <small>Years of<br>Seva</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="craft" class="craft-section">
+        <div class="section-header center reveal-up">
+            <span class="sec-tag">The Process</span>
+            <h2 class="sec-title">Culinary Devotion</h2>
+        </div>
+        <div class="craft-grid reveal-up">
+            <div class="craft-card">
+                <div class="craft-number">01</div>
+                <h3 class="craft-title">Purity First</h3>
+                <p class="craft-desc">Every ingredient is sourced with intention. We use only first-press oils and
+                    organic dairy from local Gaushalas.</p>
+            </div>
+            <div class="craft-card">
+                <div class="craft-number">02</div>
+                <h3 class="craft-title">Slow Cooking</h3>
+                <p class="craft-desc">We utilize traditional methods like clay oven smoking (Dhungar) and slow-cooking
+                    (Dum) to extract deep flavors.</p>
+            </div>
+            <div class="craft-card">
+                <div class="craft-number">03</div>
+                <h3 class="craft-title">Divine Offering</h3>
+                <p class="craft-desc">Our plating is inspired by temple art. We believe food is Prasaad, making every
+                    plate a visual and spiritual masterpiece.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="section-header center reveal-up">
+            <span class="sec-tag">The Offering</span>
+            <h2 class="sec-title">Festival Specials</h2>
+        </div>
+
+        <div class="menu-grid reveal-up">
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Makhan Mishri Sphere</span>
+                    <span class="menu-price">₹340</span>
+                </div>
+                <p class="menu-desc">Churned white butter mousse encapsulated in a sugar shell, served with saffron
+                    milk.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Dal Vrindavan</span>
+                    <span class="menu-price">₹290</span>
+                </div>
+                <p class="menu-desc">Black lentils slow-cooked for 24 hours on a charcoal flame, finished with
+                    home-churned butter.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Truffle Kulcha</span>
+                    <span class="menu-price">₹180</span>
+                </div>
+                <p class="menu-desc">Traditional tandoor-baked bread stuffed with wild mushrooms and drizzled with
+                    truffle oil.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Saffron Risotto</span>
+                    <span class="menu-price">₹450</span>
+                </div>
+                <p class="menu-desc">Arborio rice cooked with Kashmiri saffron and parmesan crisp, fusing Italian
+                    technique with Indian soul.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Rajbog Thali</span>
+                    <span class="menu-price">₹1100</span>
+                </div>
+                <p class="menu-desc">A grand platter featuring 56 preparations (Chappan Bhog) in miniature tasting
+                    portions.</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-header">
+                    <span class="menu-title">Rose Petal Halwa</span>
+                    <span class="menu-price">₹220</span>
+                </div>
+                <p class="menu-desc">Reduced milk pudding infused with dried rose petals and garnished with silver leaf.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 80px;">
+            <a href="#" class="btn">Download Festival Menu (PDF)</a>
+        </div>
+    </section>
+
+    <div id="private" class="private-dining">
+        <div class="pd-image reveal-right"></div>
+        <div class="pd-content reveal-left">
+            <span class="sec-tag">Exclusive Gatherings</span>
+            <h2 class="sec-title" style="margin-bottom: 30px;">Private Dining &<br>Events</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 40px;">
+                Host your Janmashtami celebration in our dedicated private lounge. Whether it is a family gathering or a
+                community feast, our team curates bespoke menus.
+            </p>
+            <ul style="list-style: none; color: var(--text-muted); margin-bottom: 40px; font-weight: 300;">
+                <li style="margin-bottom: 15px;"><i class="fas fa-check gold" style="margin-right: 15px;"></i> Seating
+                    for up to 50 guests</li>
+                <li style="margin-bottom: 15px;"><i class="fas fa-check gold" style="margin-right: 15px;"></i>
+                    Customized Fasting (Vrat) Menus</li>
+                <li style="margin-bottom: 15px;"><i class="fas fa-check gold" style="margin-right: 15px;"></i> Private
+                    Service</li>
+            </ul>
+            <div>
+                <a href="#contact" class="btn">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="ambience" class="ambience">
+        <div class="ambience-text reveal-left">
+            <span class="sec-tag">The Atmosphere</span>
+            <h2 class="sec-title" style="margin-bottom: 30px;">Temple<br>Grandeur</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; font-weight: 300; margin-bottom: 40px;">
+                Our interiors blend the rustic charm of traditional Haveli architecture with the sleek lines of modern
+                minimalism. The lighting is curated to create a warm, golden embrace.
+            </p>
+            <a href="#gallery"
+                style="color: var(--gold-primary); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; border-bottom: 1px solid var(--gold-primary); display: inline-block; width: fit-content;">View
+                Gallery</a>
+        </div>
+        <div class="ambience-img reveal-right"></div>
+    </div>
+
+    <section class="reviews-section">
+        <div class="section-header center reveal-up">
+            <span class="sec-tag">Acclaim</span>
+            <h2 class="sec-title">In The Press</h2>
+        </div>
+        <div class="reviews-grid reveal-up">
+            <div class="review-card">
+                <div class="review-quote">"Sattvik transforms vegetarian ingredients into a gastronomic theatre. Utterly
+                    memorable."</div>
+                <div class="review-source">Vogue India</div>
+            </div>
+            <div class="review-card">
+                <div class="review-quote">"The Dal Vrindavan is arguably the finest lentil preparation in the country. A
+                    must-visit."</div>
+                <div class="review-source">Condé Nast Traveller</div>
+            </div>
+            <div class="review-card">
+                <div class="review-quote">"An architectural marvel paired with culinary excellence. It feels like a
+                    royal banquet."</div>
+                <div class="review-source">Times Food Guide</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="section-header center reveal-up">
+            <span class="sec-tag">Reservations</span>
+            <h2 class="sec-title">Book Your Experience</h2>
+        </div>
+
+        <div class="form-container reveal-up">
+            <form>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="tel" placeholder="+91 98765 43210">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Date</label>
+                        <input type="date" style="color-scheme: dark;">
+                    </div>
+                    <div class="input-group">
+                        <label>Guests</label>
+                        <select>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5+ Guests</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 60px;">
+                    <button type="button" class="btn btn-fill" style="width: 100%; max-width: 300px;">Confirm
+                        Booking</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="newsletter reveal-up">
+        <div class="news-content">
+            <h3>The Inner Circle</h3>
+            <p>Join our exclusive guest list for tasting event invitations.</p>
+        </div>
+        <form class="news-form">
+            <input type="email" placeholder="Email Address">
+            <button type="button">Subscribe</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Sattvik.</h2>
+                <p>Reimagining Indian vegetarian cuisine with elegance, tradition, and innovation.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#ambience">Gallery</a></li>
+                    <li><a href="#private">Private Dining</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Visit Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">123 Spice Garden
+                    Road,<br>Ahmedabad, Gujarat</p>
+                <p style="color: var(--gold-primary);">Open Daily: 11 AM - 11 PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">reservations@sattvik.com
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">+91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2025 Sattvik Restaurant. All Rights Reserved.</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- 1. FIREWORKS SCRIPT (Background Animation) ---
+        const canvas = document.getElementById('fireworks-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2;
+                this.speedX = (Math.random() - 0.5) * 1.5;
+                this.speedY = (Math.random() - 0.5) * 1.5;
+                // Sparkler colors: Gold, White, Blue
+                this.color = Math.random() > 0.5 ? '#FFD700' : (Math.random() > 0.5 ? '#FFFFFF' : '#00A3E0');
+                this.alpha = Math.random();
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.alpha -= 0.005;
+                // Respawn
+                if (this.alpha <= 0) {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.alpha = 1;
+                }
+            }
+            draw() {
+                ctx.globalAlpha = this.alpha;
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        const particles = [];
+        for (let i = 0; i < 150; i++) particles.push(new Particle());
+
+        function animateFireworks() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateFireworks);
+        }
+        animateFireworks();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // --- 2. EXISTING ANIMATIONS ---
+
+        // Preloader Animation
+        window.addEventListener('load', () => {
+            const tl = gsap.timeline();
+            tl.to(".loader-logo", { opacity: 1, y: 0, duration: 1, ease: "power3.out" })
+                .to(".loader", { y: "-100%", duration: 1, delay: 0.5, ease: "power3.inOut" });
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        // GSAP Scroll Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // General Fade Up
+        gsap.utils.toArray('.reveal-up').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: { trigger: elem, start: "top 85%" },
+                y: 50, opacity: 0, duration: 1.2, ease: "power3.out"
+            });
+        });
+
+        // Reveal Left
+        gsap.utils.toArray('.reveal-left').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: { trigger: elem, start: "top 80%" },
+                x: -50, opacity: 0, duration: 1.2, ease: "power3.out"
+            });
+        });
+
+        // Reveal Right
+        gsap.utils.toArray('.reveal-right').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: { trigger: elem, start: "top 80%" },
+                x: 50, opacity: 0, duration: 1.2, ease: "power3.out"
+            });
+        });
+    </script>
+</body>
+
+</html>

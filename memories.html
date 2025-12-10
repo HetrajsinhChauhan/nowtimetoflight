@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories | SATTVIK</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+   <link id="themeStylesheet" rel="stylesheet">
+   <script src="theme.js"></script>
+</head>
+
+<body>
+
+   
+    <div class="loader">
+        <div class="loader-logo">SATTVIK.</div>
+    </div>
+
+    <nav id="navbar">
+        <div class="logo">Sattvik.</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="memories.html">Memories</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+
+        </ul>
+        <div class="nav-actions">
+            <a href="reservetable.html" class="btn">Reserve Table</a>
+        </div>
+    </nav>
+    <header class="page-header">
+        <h1 class="page-title reveal-up">Timeless Moments</h1>
+        <span class="page-subtitle reveal-up">Capturing the Soul of Sattvik</span>
+    </header>
+
+    <div class="gallery-controls reveal-up">
+        <button class="filter-btn active" data-filter="all">All Moments</button>
+        <button class="filter-btn" data-filter="ambiance">Ambiance</button>
+        <button class="filter-btn" data-filter="events">Celebrations</button>
+        <button class="filter-btn" data-filter="culinary">Culinary Art</button>
+    </div>
+
+    <section class="gallery-section reveal-up">
+        <div class="masonry-grid">
+
+            <div class="gallery-item" data-category="ambiance">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop"
+                    alt="Interior">
+                <div class="gallery-overlay">
+                    <span class="img-tag">Ambiance</span>
+                    <h3 class="img-title">Main Dining Hall</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="culinary">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1780&auto=format&fit=crop"
+                    alt="Food">
+                <div class="gallery-overlay">
+                    <span class="img-tag">Culinary</span>
+                    <h3 class="img-title">The Art of Plating</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="https://images.unsplash.com/photo-1519671482538-518b5c2bf7c6?q=80&w=2070&auto=format&fit=crop"
+                    alt="People">
+                <div class="gallery-overlay">
+                    <span class="img-tag">Celebrations</span>
+                    <h3 class="img-title">Private Gala 2024</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <img src="https://images.unsplash.com/photo-1550966871-3ed3c47e2ce2?q=80&w=2070&auto=format&fit=crop"
+                    alt="Decor">
+                <div class="gallery-overlay">
+                    <span class="img-tag">Ambiance</span>
+                    <h3 class="img-title">Golden Hour Lighting</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="culinary">
+                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2070&auto=format&fit=crop"
+                    alt="Chef">
+                <div class="gallery-overlay">
+                    <span class="img-tag">Culinary</span>
+                    <h3 class="img-title">Chef at Work</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="https://images.unsplash.com/photo-1470753937643-efeb931202a9?q=80&w=2070&auto=format&fit=crop"
+                    alt="Wine">
+                <div class="gallery-overlay">
+                    <span class="img-tag">Celebrations</span>
+                    <h3 class="img-title">Wine Tasting Event</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="culinary">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1857&auto=format&fit=crop"
+                    alt="Dessert">
+                <div class="gallery-overlay">
+                    <span class="img-tag">Culinary</span>
+                    <h3 class="img-title">Signature Desserts</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <img src="https://images.unsplash.com/photo-1424847651672-bf20964881d9?q=80&w=2070&auto=format&fit=crop"
+                    alt="Exterior">
+                <div class="gallery-overlay">
+                    <span class="img-tag">Ambiance</span>
+                    <h3 class="img-title">Evening Facade</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <i class="fas fa-times close-lightbox" id="closeLightbox"></i>
+        <img src="" alt="Full View" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Sattvik.</h2>
+                <p>Reimagining Indian vegetarian cuisine with elegance, tradition, and innovation.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#ambience">Gallery</a></li>
+                    <li><a href="#private">Private Dining</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Visit Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">123 Spice Garden
+                    Road,<br>Ahmedabad, Gujarat</p>
+                <p style="color: var(--gold-primary);">Open Daily: 11 AM - 11 PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">reservations@sattvik.com
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">+91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2025 Sattvik Restaurant. All Rights Reserved.</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+ // 1. Preloader Animation
+        window.addEventListener('load', () => {
+            const tl = gsap.timeline();
+            tl.to(".loader-logo", { opacity: 1, y: 0, duration: 1, ease: "power3.out" })
+                .to(".loader", { y: "-100%", duration: 1, delay: 0.5, ease: "power3.inOut" });
+        });
+
+        // 1. Reveal Animations
+        gsap.utils.toArray('.reveal-up').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: { trigger: elem, start: "top 85%" },
+                y: 50, opacity: 0, duration: 1.2, ease: "power3.out"
+            });
+        });
+
+        // 2. Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Active Class
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                items.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        gsap.to(item, { opacity: 1, scale: 1, display: 'block', duration: 0.4 });
+                    } else {
+                        gsap.to(item, { opacity: 0, scale: 0.8, display: 'none', duration: 0.4 });
+                    }
+                });
+            });
+        });
+
+        // 3. Lightbox Logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeLightbox = document.getElementById('closeLightbox');
+
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img').src;
+                lightboxImg.src = img;
+                lightbox.classList.add('active');
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
