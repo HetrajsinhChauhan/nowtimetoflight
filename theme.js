@@ -7,11 +7,11 @@ const day = today.getDate(); // 1–31
 let themePrefix = "def"; // Default theme
 
 // Diwali Theme: Oct 15 – Nov 15
-if (month === 12 && day >= 11 || month === 12 && day <= 12) {
+if (month === 10 && day >= 15 || month === 11 && day <= 15) {
     themePrefix = "diw";
 }
 // Janmastami Theme: Aug 19 – Aug 30
-else if (month === 12 && day >= 13 && day <= 14) {
+else if (month === 8 && day >= 19 && day <= 30) {
     themePrefix = "jan";
 }
 
@@ -33,4 +33,3 @@ const pageMap = {
 const cssFile = `${themePrefix}${pageMap[pageName] || 'index'}.css`;
 
 // Apply the theme
-document.getElementById("themeStylesheet").href = cssFile;
